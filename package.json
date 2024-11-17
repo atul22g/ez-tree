@@ -30,7 +30,9 @@
   "types": "./build/ez-tree.es.d.ts",
   "scripts": {
     "start": "vite --config vite.app.config.js",
-    "build": "vite build --config vite.lib.config.js"
+    "build:app": "vite build --config vite.app.config.js",
+    "build:lib": "vite build --config vite.lib.config.js",
+    "build": "npm run build:lib && npm run build:app"
   },
   "devDependencies": {
     "@types/three": "^0.169.0",
